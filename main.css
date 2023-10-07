@@ -1,0 +1,157 @@
+:root {
+    --main-color: #2196f3;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  .game {
+    background-color: #eee;
+    min-height: 100vh;
+  }
+  @media (max-width:767px) {
+    .game {
+      width: 400px;
+    }
+    
+  }
+  .container {
+    margin: auto;
+    width: 70%;
+  }
+  .choose-lvl {
+    width: 70%;
+    background-color: #014989f6;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  #select-lvl option,
+  #select-lvl {
+    padding: 6px;
+    font-size: 16px;
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+  .name {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .message {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .message span {
+    font-weight: bold;
+    color: #009688;
+  }
+  .message span::before {
+    content: "[ ";
+  }
+  .message span::after {
+    content: " ]";
+  }
+  .start {
+    width: 50%;
+    margin: 5px auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .the-word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+    user-select: none;
+  }
+  .input {
+    margin: 15px auto;
+    width: 80%;
+    display: block;
+    padding: 15px;
+    border: 3px solid var(--main-color);
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 6px;
+    caret-color: var(--main-color);
+  }
+  .input:focus {
+    outline: none;
+  }
+  .upcoming-words {
+    display: flex;
+    background-color: white;
+    margin: 15px 0;
+    padding: 15px;
+  }
+  .upcoming-words div{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  .upcoming-words span {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 4px;
+  }
+  @media (max-width:767px) {
+    .upcoming-words {
+      display: none;
+    }
+    .the-word {
+      font-size: 36px;
+    }
+    
+  }
+  .control {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+  }
+  .control span {
+    font-weight: bold;
+    color: #009688;
+  }
+  .finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+  }
+  .finish .good {
+    color: green;
+  }
+  .finish .bad {
+    color: red;
+  }
